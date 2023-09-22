@@ -34,12 +34,12 @@ class Map:
     def update(self, variant):
 
         for platform in self.platforms:
-            platform.update(self.screen, variant)
+            platform.update(self.screen, int(round(variant)))
 
     def color(self, i):
         if debug:
             if i % 2 == 0:
-                return (0, 255, 0, 128)
+                return (0, 255, 0, 255)
             else:
-                return (0, 0, 255, 128)
+                return (0, 0, 255, 255)
         return (255, 255, 255, 0)

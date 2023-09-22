@@ -45,7 +45,7 @@ class Animate:
 
         #debug
         if debug:
-            self.entity.image.fill((255, 255, 255, 128))
+            self.entity.image.fill((255, 255, 255, 255))
 
         #hflip
         if self.entity.hflip:

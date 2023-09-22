@@ -22,6 +22,7 @@ class Robot(pygame.sprite.Sprite):
         self._flip = 1
 
         self.speed = 0
+        self.life = 2 #max 3
 
     def update(self, delta):
         self.move(delta)
